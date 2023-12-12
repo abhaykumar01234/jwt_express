@@ -1,0 +1,29 @@
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Lilly"
+}
+
+###
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlsbHkiLCJpYXQiOjE2ODE4NDEzMTR9.2bNwO1YRPyhfWwsLydkBl40bKdzZELVcY5b6EY3ytQY"
+}
+
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlsbHkiLCJpYXQiOjE2ODE4NDEzOTQsImV4cCI6MTY4MTg0MTQyNH0.n2VMW2IoPCbDzXLi6whRSx5ddyE3DJk-kPvC7XYQnCY
+
+
+
+###
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlsbHkiLCJpYXQiOjE2ODE4NDEzMTR9.2bNwO1YRPyhfWwsLydkBl40bKdzZELVcY5b6EY3ytQY"
+}
